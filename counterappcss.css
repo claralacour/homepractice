@@ -1,8 +1,18 @@
 body{
-    background-color: antiquewhite;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(fitness-rings-7530142_640.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
+    width: 400px;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.618);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 80%;
+    margin: auto;
 }
 
 h1{
@@ -24,11 +34,12 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.28);
 }
 
 #increment-btn{
-    background: red;
+    background: rgb(46, 74, 199);
 }
 #save-btn{
-    background: green;
+    background: rgb(10, 192, 10);
 }

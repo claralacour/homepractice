@@ -7,15 +7,19 @@ change the count-el in the HTML to reflect the new count*/
 
 let countEl = document.getElementById("count-el");
 let count = 0;
-
+let saveEl = document.getElementById("save-el");
 
 function increment(){
-    count = count + 1; 
-    countEl.innerText = count;
+    count += 1; 
+    countEl.textContent = count;
 }
 
 function save(){
+    let numberDash = count + "-";
+    saveEl.textContent += numberDash; //her skriver vi altså += fordi at vi skal TILFØJE for hver gang + vi har tilføjet textContent for at have mellemrummene med
     console.log(count);
+    count = 0;
+    countEl.textContent = count;
 }
 
 let username = "Clara, "
@@ -25,7 +29,8 @@ let messageToUser = username + message;
 
 console.log(messageToUser);
 
-let welcomeEl = document.getElementById("welcome-el");
+
+/*let welcomeEl = document.getElementById("welcome-el");
 let names = "Clara";
 let greeting = "Welcome back";
 
